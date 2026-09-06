@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="referrer" content="no-referrer">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo Menéndez | Infraestructura y Construcción</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <!-- Hoja de Estilos -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-white text-[#1E293B] antialiased selection:bg-orange-100 selection:text-[#FF6B00]">
+
+  <!-- ==================== HEADER FIJO ==================== -->
+  <header class="bg-white/95 border-b border-gray-100 sticky top-0 z-50 shadow-sm backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      
+      <!-- LOGO / MARCA -->
+      <a href="#inicio" class="flex items-center gap-3.5 group shrink-0" aria-label="Grupo Menéndez - Inicio">
+        <div class="h-12 w-auto shrink-0 transition-transform duration-300 group-hover:scale-105">
+          <img src="resources/logo.png" alt="Grupo Menéndez Logo" class="h-full w-auto object-contain">
+        </div>
+        <div class="flex flex-col">
+          <span class="text-sm sm:text-base font-extrabold tracking-wider text-[#1E293B] uppercase leading-none">GRUPO MENÉNDEZ</span>
+          <span class="text-[10px] tracking-widest text-[#FF6B00] font-bold uppercase mt-1">CONSTRUCCIÓN & INFRAESTRUCTURA</span>
+        </div>
+      </a>
+
+      <!-- Menú Desktop -->
+      <nav class="hidden md:flex items-center gap-8" aria-label="Navegación principal">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#filiales" class="nav-link">Filiales</a>
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#galeria" class="nav-link">Galería</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <!-- Botón Contactar Desktop -->
+      <div class="hidden md:block">
+        <a href="#contacto" class="btn-vibrant text-white px-6 py-2.5 rounded-lg text-xs font-bold shadow-md inline-flex items-center gap-2">
+          <span>Contactar</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-white"></i>
+        </a>
+      </div>
+
+      <!-- Botón Hamburguesa Móvil -->
+      <button id="menu-btn" class="md:hidden p-2 text-gray-700 hover:text-[#FF6B00] transition-colors" aria-label="Abrir Menú Móvil" aria-expanded="false">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+    <div class="brand-accent-bar" aria-hidden="true"></div>
+
+    <!-- Menú Móvil Desplegable -->
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-5 pt-3 space-y-3 bg-white border-t border-gray-100 text-xs text-gray-700 font-medium">
+      <a href="#inicio" class="block py-1 hover:text-[#FF6B00]">Inicio</a>
+      <a href="#nosotros" class="block py-1 hover:text-[#FF6B00]">Nosotros</a>
+      <a href="#filiales" class="block py-1 hover:text-[#FF6B00]">Filiales</a>
+      <a href="#servicios" class="block py-1 hover:text-[#FF6B00]">Servicios</a>
+      <a href="#galeria" class="block py-1 hover:text-[#FF6B00]">Galería</a>
+      <a href="#contacto" class="block py-1 hover:text-[#FF6B00]">Contacto</a>
+      <a href="#contacto" class="block text-center mt-2 px-5 py-2.5 rounded-lg bg-[#FF6B00] text-white font-bold">Contactar</a>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- ==================== 1. HERO ==================== -->
+    <section class="relative bg-gradient-to-br from-slate-50 via-white to-orange-50/20 overflow-hidden border-b border-gray-100">
+      <div class="hidden lg:block absolute top-0 right-0 w-[45%] h-full bg-[#E2E8F0]/40" aria-hidden="true"></div>
+
+      <div class="max-w-7xl mx-auto px-6 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+        
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left flex flex-col items-center lg:items-start">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-100 text-[#FF6B00] text-xs font-bold tracking-wide shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-[#FF6B00] animate-ping" aria-hidden="true"></span>
+            Líderes en Macro-Infraestructura y Obras Públicas
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-[56px] font-black text-[#1E293B] leading-[1.1] tracking-tight">
+            Servicios diversificados.<br>
+            <span class="text-[#FF6B00]">Calidad inquebrantable.</span>
+          </h1>
+
+          <p class="text-sm sm:text-base text-gray-600 max-w-lg leading-relaxed font-normal">
+            Empresa dedicada a la construcción de obra hidráulica, obra civil y proyectos de infraestructura a gran escala. Contamos con equipo, maquinaria pesada y personal calificado para obras de alto impacto.
+          </p>
+
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-5 pt-3">
+            <a href="#galeria" class="btn-vibrant text-white px-7 py-3.5 rounded-lg text-xs font-bold tracking-wide shadow-lg flex items-center gap-2.5">
+              <span>Nuestros proyectos</span>
+              <i data-lucide="arrow-up-right" class="w-4 h-4 text-orange-400"></i>
+            </a>
+
+            <a href="#servicios" class="flex items-center gap-3 group text-xs font-bold text-gray-700 hover:text-[#FF6B00] transition-colors">
+              <span class="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center group-hover:border-[#FF6B00] group-hover:bg-orange-50 transition-all shadow-sm">
+                <i data-lucide="play" class="w-3.5 h-3.5 fill-gray-800 text-gray-800 group-hover:fill-[#FF6B00] group-hover:text-[#FF6B00] ml-0.5 transition-colors"></i>
+              </span>
+              <span class="w-8 h-[2px] bg-gray-300 group-hover:w-12 group-hover:bg-[#FF6B00] transition-all" aria-hidden="true"></span>
+              <span>Explorar especialidades</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Imagen del Hero -->
+        <div class="lg:col-span-5 relative flex justify-center">
+          <div class="w-full max-w-[430px] aspect-[4/5] rounded-[36px] overflow-hidden bg-slate-200 shadow-2xl border-8 border-white">
+            <div class="img-zoom-container w-full h-full">
+              <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1000" 
+                   alt="Edificio corporativo y arquitectura moderna" 
+                   class="w-full h-full object-cover img-zoom" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 2. NOSOTROS ==================== -->
+    <section id="nosotros" class="py-20 bg-white border-b border-gray-100">
+      <div class="max-w-6xl mx-auto px-6">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-xs font-extrabold text-[#FF6B00] uppercase tracking-widest">Nuestra Trayectoria</span>
+          <h2 class="text-3xl sm:text-4xl font-black text-[#1E293B] mt-1">¿Quiénes somos?</h2>
+          <p class="text-sm sm:text-base text-gray-600 mt-4 leading-relaxed text-center">
+            Somos una empresa dedicada a la construcción de proyectos de obra hidráulica y obra civil, tenemos equipo, maquinaria y transporte para atender a nuestros clientes en proyectos de infraestructura de pequeña y mediana complejidad, nos dedicamos a la construcción de obras gubernamentales y privadas satisfaciendo a nuestros clientes por medio de la exigencia en el control de calidad de nuestros productos terminados.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-16">
+          <div class="lg:col-span-7 bg-slate-50 p-8 sm:p-10 rounded-3xl border border-gray-200/80 shadow-sm">
+            <span class="text-xs font-extrabold text-[#FF6B00] uppercase tracking-widest">Compromiso y Futuro</span>
+            <h3 class="text-2xl font-black text-[#1E293B] mt-1 mb-4">Misión y visión</h3>
+            <p class="text-sm text-gray-600 leading-relaxed text-justify">
+              Crecer como empresa constructora y ser más eficiente, para llegar a colocarnos en una de las mejores del ramo. Liderar el mercado por medio de la responsabilidad y eficiencia, cumpliendo a tiempo con todos y cada uno de los trabajos encomendados, lograr que todo nuestro personal se sienta motivado y orgulloso de pertenecer a nuestra organización, fomentando el control y calidad en el servicio, buscando siempre dar más de sí mismos y con esto lograr la satisfacción del cliente.
+            </p>
+          </div>
+
+          <div class="lg:col-span-5 bg-[#1E2229] text-white p-8 sm:p-9 rounded-3xl shadow-xl border border-gray-800">
+            <h4 class="text-center text-sm font-black tracking-wider uppercase mb-6 text-gray-200">
+              VALORES
+            </h4>
+            <ul class="text-xs sm:text-sm text-gray-300 space-y-3 text-center font-medium">
+              <li>Integridad, honestidad y conducta</li>
+              <li>Compromiso con calidad</li>
+              <li>Satisfacción del cliente</li>
+              <li>Trabajo en equipo</li>
+              <li>Crecimiento, productividad</li>
+              <li>Liderazgo en la industria</li>
+              <li>Compromiso con la ecología</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-xl mx-auto p-6 rounded-3xl bg-slate-50 border border-gray-200/80">
+          <div class="flex items-center justify-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-[#1E293B] text-white flex items-center justify-center shrink-0 shadow-md">
+              <i data-lucide="user-check" class="w-5 h-5 text-[#FF6B00]"></i>
+            </div>
+            <div>
+              <div class="text-2xl font-extrabold text-[#1E293B]">+17 años</div>
+              <div class="text-xs text-gray-500 font-medium">Clientes satisfechos</div>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-[#334155] text-white flex items-center justify-center shrink-0 shadow-md">
+              <i data-lucide="building" class="w-5 h-5 text-[#FF6B00]"></i>
+            </div>
+            <div>
+              <div class="text-2xl font-extrabold text-[#1E293B]">50+</div>
+              <div class="text-xs text-gray-500 font-medium">Proyectos concluidos</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 3. FILIALES ==================== -->
+    <section id="filiales" class="py-16 bg-white border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-xs font-extrabold text-gray-500 uppercase tracking-widest mb-10">
+          EMPRESAS QUE CONFORMAN EL GRUPO
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center max-w-5xl mx-auto">
+          
+          <!-- Drecomen -->
+          <div class="card-vibrant p-6 rounded-2xl bg-slate-50 flex flex-col items-center justify-center min-h-[140px]">
+            <div class="flex items-center justify-center gap-3">
+              <div class="w-14 h-11 shrink-0">
+                <svg viewBox="0 0 120 75" fill="none" class="w-full h-full" aria-hidden="true">
+                  <path d="M50 38 L30 40 L34 26 L64 24 L78 35 Z" fill="#FACC15" stroke="#1E293B" stroke-width="2"/>
+                  <path d="M48 24 L52 14 L62 14 L66 24 Z" fill="#1E293B"/>
+                  <path d="M78 35 L96 16 L108 30 L110 56 L102 60 L98 52" stroke="#1E293B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M96 56 L108 62 L102 66 Z" fill="#1E293B"/>
+                </svg>
+              </div>
+              <div class="flex flex-col text-left">
+                <span class="font-black italic text-2xl tracking-tighter text-[#1E293B] leading-none">DRECOMEN</span>
+                <span class="text-[8px] tracking-[0.25em] text-gray-500 uppercase font-black mt-1">CONSTRUCCIONES</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mecahno -->
+          <div class="card-vibrant p-6 rounded-2xl bg-slate-50 flex flex-col items-center justify-center min-h-[140px]">
+            <div class="flex items-center justify-center gap-3">
+              <div class="w-11 h-11 shrink-0">
+                <svg viewBox="0 0 80 80" fill="none" class="w-full h-full" aria-hidden="true">
+                  <circle cx="40" cy="40" r="38" fill="#A3E635"/>
+                  <path d="M18 64 V28 L32 18 V64 Z" fill="#FFFFFF"/>
+                  <path d="M38 64 V32 L54 44 V64 Z" fill="#FFFFFF"/>
+                  <path d="M58 64 V50 L64 54 V64 Z" fill="#FFFFFF"/>
+                </svg>
+              </div>
+              <div class="flex flex-col text-left">
+                <span class="font-black text-2xl tracking-tight text-[#1E293B] leading-none">MECAHNO</span>
+                <span class="text-[8px] tracking-wider text-gray-500 uppercase font-bold mt-1">CONSTRUCCIONES S.A. DE C.V.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ruimen -->
+          <div class="card-vibrant p-6 rounded-2xl bg-slate-50 flex flex-col items-center justify-center min-h-[140px]">
+            <div class="flex items-center justify-center gap-3">
+              <div class="w-9 h-11 shrink-0">
+                <svg viewBox="0 0 60 75" fill="none" class="w-full h-full" aria-hidden="true">
+                  <path d="M22 6 L40 18 L16 54 L6 42 Z" fill="#FACC15"/>
+                  <path d="M40 18 L56 46 L38 64 L22 36 Z" fill="#EAB308"/>
+                  <path d="M16 54 L38 64 L30 70 L8 58 Z" fill="#CA8A04"/>
+                </svg>
+              </div>
+              <div class="flex flex-col text-left">
+                <span class="font-black text-2xl tracking-wider text-[#1E293B] leading-none">RUIMEN</span>
+                <span class="text-[8px] tracking-wider text-gray-500 uppercase font-bold mt-1">CONSTRUCCIONES S.A. DE C.V.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. SERVICIOS ==================== -->
+    <section id="servicios" class="py-20 bg-slate-50/50 border-b border-gray-100">
+      <div class="max-w-6xl mx-auto px-6">
+        
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span class="text-xs font-extrabold text-[#FF6B00] uppercase tracking-widest">Nuestra Experiencia</span>
+          <h2 class="text-3xl font-black text-[#1E293B] tracking-tight uppercase mt-1">SERVICIOS</h2>
+          <p class="text-sm text-gray-600 mt-2 leading-relaxed">
+            Planeación, ejecución y supervisión técnica en obras de alta exigencia:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+          <div class="lg:col-span-7 space-y-5">
+            <div class="card-vibrant bg-white p-6 rounded-2xl shadow-sm">
+              <h3 class="text-sm font-bold text-[#1E293B] uppercase mb-2 flex items-center gap-2">
+                <i data-lucide="building-2" class="w-4 h-4 text-[#FF6B00]"></i> Urbanización:
+              </h3>
+              <ul class="text-xs text-gray-600 space-y-1 pl-6 list-disc">
+                <li>Pavimentaciones y vialidades de concreto hidráulico</li>
+                <li>Viviendas y complejos habitacionales</li>
+                <li>Mantenimiento, remodelación y demolición de inmuebles</li>
+                <li>Movimientos de tierra, caminos y puentes</li>
+              </ul>
+            </div>
+
+            <div class="card-vibrant bg-white p-6 rounded-2xl shadow-sm">
+              <h3 class="text-sm font-bold text-[#1E293B] uppercase mb-2 flex items-center gap-2">
+                <i data-lucide="droplet" class="w-4 h-4 text-[#FF6B00]"></i> Obra hidráulica y sanitaria:
+              </h3>
+              <ul class="text-xs text-gray-600 space-y-1 pl-6 list-disc">
+                <li>Colectores pluviales de gran diámetro</li>
+                <li>Red de agua potable y líneas de conducción</li>
+                <li>Drenajes sanitarios y cárcamos de bombeo</li>
+                <li>Plantas de tratamiento de aguas residuales</li>
+              </ul>
+            </div>
+
+            <div class="card-vibrant bg-white p-6 rounded-2xl shadow-sm">
+              <h3 class="text-sm font-bold text-[#1E293B] uppercase mb-2 flex items-center gap-2">
+                <i data-lucide="zap" class="w-4 h-4 text-[#FF6B00]"></i> Obra eléctrica:
+              </h3>
+              <ul class="text-xs text-gray-600 space-y-1 pl-6 list-disc">
+                <li>Líneas de media y baja tensión, transformadores y subestaciones</li>
+              </ul>
+            </div>
+
+            <div class="card-vibrant bg-white p-6 rounded-2xl shadow-sm">
+              <h3 class="text-sm font-bold text-[#1E293B] uppercase mb-2 flex items-center gap-2">
+                <i data-lucide="wrench" class="w-4 h-4 text-[#FF6B00]"></i> Obra mecánica:
+              </h3>
+              <ul class="text-xs text-gray-600 space-y-1 pl-6 list-disc">
+                <li>Proyecto e instalación de sistemas contra incendios</li>
+                <li>Montajes de tuberías industriales y mantenimientos electromecánicos</li>
+              </ul>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-orange-50 border border-orange-200 text-xs text-[#9A3412] font-semibold flex items-center gap-3">
+              <i data-lucide="truck" class="w-5 h-5 shrink-0 text-[#FF6B00]"></i>
+              <span>★ Renta de maquinaria pesada, equipos de well point.</span>
+            </div>
+          </div>
+
+          <!-- Cuadrícula 2x2 en Servicios -->
+          <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+            <div class="aspect-square rounded-2xl overflow-hidden shadow-sm img-zoom-container bg-slate-100">
+              <img src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                   alt="Pavimentación y maquinaria en obra vial" class="w-full h-full object-cover img-zoom" loading="lazy">
+            </div>
+
+            <div class="aspect-square rounded-2xl overflow-hidden shadow-sm img-zoom-container bg-slate-100">
+              <img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                   alt="Edificio en construcción con grúa torre" class="w-full h-full object-cover img-zoom" loading="lazy">
+            </div>
+
+            <div class="aspect-square rounded-2xl overflow-hidden shadow-sm img-zoom-container bg-slate-100">
+              <img src="https://images.pexels.com/photos/159358/construction-site-build-construction-work-159358.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                   alt="Estadio y estructura deportiva en construcción" class="w-full h-full object-cover img-zoom" loading="lazy">
+            </div>
+
+            <div class="aspect-square rounded-2xl overflow-hidden shadow-sm img-zoom-container bg-slate-100">
+              <img src="https://images.pexels.com/photos/1078884/pexels-photo-1078884.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                   alt="Excavadora pesada operando en terracería" class="w-full h-full object-cover img-zoom" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 5. BANNER CONSTRUCTOR ==================== -->
+    <section class="py-16 bg-white border-b border-gray-100">
+      <div class="max-w-5xl mx-auto px-6 text-center">
+        <h2 class="text-3xl sm:text-4xl font-black text-[#1E293B]">Te ayudamos a construir.</h2>
+        <p class="text-xs sm:text-sm text-gray-500 mt-2 mb-10 max-w-xl mx-auto">
+          Más de 17 años de experiencia en el desarrollo de infraestructura pública y privada de alto impacto.
+        </p>
+
+        <div class="w-full max-w-4xl mx-auto h-[260px] sm:h-[360px] rounded-3xl overflow-hidden shadow-xl bg-gray-100 border border-gray-200 img-zoom-container">
+          <img src="https://images.pexels.com/photos/585419/pexels-photo-585419.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+               alt="Ingeniero en obra civil" class="w-full h-full object-cover object-center img-zoom" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. GALERÍA DE PROYECTOS ==================== -->
+    <section id="galeria" class="py-20 bg-white border-b border-gray-100">
+      <div class="max-w-6xl mx-auto px-6">
+        
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span class="text-xs font-extrabold text-[#FF6B00] uppercase tracking-widest">Portafolio</span>
+          <h2 class="text-3xl font-black text-[#1E293B] mt-1">Galería de Proyectos</h2>
+          <p class="text-xs sm:text-sm text-gray-500 mt-1">Evidencia tangible de obras ejecutadas con rigor y cumplimiento técnico.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Obra 1 -->
+          <div class="card-vibrant bg-white rounded-2xl overflow-hidden shadow-sm">
+            <div class="aspect-[4/3] bg-slate-100 img-zoom-container">
+              <img src="https://images.pexels.com/photos/159358/construction-site-build-construction-work-159358.jpeg?auto=compress&cs=tinysrgb&w=700" 
+                   alt="Pavimentación en autopista y obra vial" class="w-full h-full object-cover img-zoom" loading="lazy">
+            </div>
+            <div class="p-5">
+              <span class="text-[10px] font-bold uppercase text-[#FF6B00]">Urbanización & Obra Vial</span>
+              <h3 class="text-sm font-bold text-[#1E293B] mt-1">Pavimentación con Concreto Hidráulico</h3>
+              <p class="text-xs text-gray-500 mt-2">Boca del Río, Ver. Vialidades urbanas, guarniciones y banquetas.</p>
+            </div>
+          </div>
+
+          <!-- Obra 2 -->
+          <div class="card-vibrant bg-white rounded-2xl overflow-hidden shadow-sm">
+            <div class="aspect-[4/3] bg-slate-100 img-zoom-container">
+              <img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=700" 
+                   alt="Edificio en obra negra con varillaje de acero y concreto" class="w-full h-full object-cover img-zoom" loading="lazy">
+            </div>
+            <div class="p-5">
+              <span class="text-[10px] font-bold uppercase text-[#FF6B00]">Obra Civil & Infraestructura</span>
+              <h3 class="text-sm font-bold text-[#1E293B] mt-1">Estructuras de Concreto y Varillaje</h3>
+              <p class="text-xs text-gray-500 mt-2">Cimentaciones profundas, losas armadas y columnas de carga.</p>
+            </div>
+          </div>
+
+          <!-- Obra 3 -->
+          <div class="card-vibrant bg-white rounded-2xl overflow-hidden shadow-sm">
+            <div class="aspect-[4/3] bg-slate-100 img-zoom-container">
+              <img src="https://images.pexels.com/photos/1078884/pexels-photo-1078884.jpeg?auto=compress&cs=tinysrgb&w=700" 
+                   alt="Excavadoras pesadas de oruga trabajando en zanja" class="w-full h-full object-cover img-zoom" loading="lazy">
+            </div>
+            <div class="p-5">
+              <span class="text-[10px] font-bold uppercase text-[#FF6B00]">Movimiento de Tierras & Equipo</span>
+              <h3 class="text-sm font-bold text-[#1E293B] mt-1">Operación y Renta de Maquinaria Pesada</h3>
+              <p class="text-xs text-gray-500 mt-2">Excavadoras, retroexcavadoras y camiones para terracerías masivas.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 7. COTIZACIÓN RÁPIDA ==================== -->
+    <section class="py-16 bg-gradient-to-b from-white to-slate-50">
+      <div class="max-w-4xl mx-auto px-6">
+        <div class="bg-gradient-to-r from-slate-200 to-blue-100 rounded-3xl p-8 sm:p-10 flex flex-col md:flex-row items-center justify-between gap-8 shadow-md border border-white">
+          <div class="w-40 sm:w-48 shrink-0">
+            <img src="https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                 alt="Personal técnico de obra" class="rounded-2xl shadow-md object-cover h-40 w-full img-zoom" loading="lazy">
+          </div>
+
+          <div class="flex-1 text-center md:text-left space-y-4">
+            <h3 class="text-2xl sm:text-3xl font-black text-[#1E293B] leading-tight">
+              ¿Tienes un proyecto en mente?<br><span class="text-[#FF6B00]">¡Cotiza con nosotros!</span>
+            </h3>
+
+            <form id="quote-form" class="flex flex-col sm:flex-row gap-0 max-w-md mx-auto md:mx-0 bg-white rounded-xl overflow-hidden shadow-md border border-gray-200">
+              <input type="email" required placeholder="Escribe tu correo electrónico" class="px-4 py-3 text-xs text-gray-700 outline-none flex-1">
+              <button type="submit" class="btn-vibrant text-white text-xs font-bold px-6 py-3 transition-colors shrink-0">
+                Solicitar cotización
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 8. CONTACTO & MAPA ==================== -->
+    <section id="contacto" class="py-20 bg-white border-t border-gray-100">
+      <div class="max-w-6xl mx-auto px-6">
+        
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span class="text-xs font-extrabold text-[#FF6B00] uppercase tracking-widest">Atención Directa</span>
+          <h2 class="text-3xl sm:text-4xl font-black text-[#1E293B] mt-1">Ubicación y Contacto</h2>
+          <p class="text-sm text-gray-600 mt-2">
+            Visítanos en nuestras oficinas operativas o comunícate vía telefónica y WhatsApp:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <div class="lg:col-span-5 space-y-5 bg-slate-50 p-8 rounded-3xl border border-gray-200/80 shadow-sm">
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 rounded-xl bg-orange-100 text-[#FF6B00] flex items-center justify-center shrink-0 shadow-sm">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-xs text-[#1E293B] uppercase">Dirección Operativa</h3>
+                <p class="text-xs text-gray-600 mt-1 leading-relaxed">Av. 39 L No. 46, Col. Venustiano Carranza, Boca del Río, Veracruz.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 rounded-xl bg-orange-100 text-[#FF6B00] flex items-center justify-center shrink-0 shadow-sm">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-xs text-[#1E293B] uppercase">Teléfono / Fax</h3>
+                <p class="text-xs text-gray-600 mt-1">(229) 935 83 52</p>
+              </div>
+            </div>
+
+            <div class="pt-2 text-center sm:text-left">
+              <a href="https://wa.me/522299358352" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold shadow-md transition-colors">
+                <i data-lucide="message-square" class="w-4 h-4"></i> WhatsApp Business
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 rounded-3xl overflow-hidden border border-gray-200 shadow-lg h-[360px]">
+            <iframe 
+              title="Ubicación Grupo Menéndez Boca del Río"
+              class="w-full h-full border-0" 
+              src="https://maps.google.com/maps?q=Av.+39+L+No.+46,+Col.+Venustiano+Carranza,+Boca+del+Río,+Veracruz&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              loading="lazy">
+            </iframe>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-[#1E293B] text-gray-300 py-12 border-t border-gray-800">
+    <div class="max-w-6xl mx-auto px-6">
+      
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6 mb-8 border-b border-gray-700/60 pb-8 text-center md:text-left">
+        <div class="flex items-center justify-center gap-3">
+          <div class="h-9 w-10 shrink-0">
+            <img src="resources/logo.png" alt="Grupo Menéndez Logo" class="h-full w-auto object-contain">
+          </div>
+          <span class="text-sm font-black tracking-wider text-white uppercase">GRUPO MENÉNDEZ</span>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-6 text-xs text-gray-300 font-medium">
+          <a href="#inicio" class="hover:text-[#FF6B00] transition-colors">Inicio</a>
+          <a href="#nosotros" class="hover:text-[#FF6B00] transition-colors">Nosotros</a>
+          <a href="#filiales" class="hover:text-[#FF6B00] transition-colors">Filiales</a>
+          <a href="#servicios" class="hover:text-[#FF6B00] transition-colors">Servicios</a>
+          <a href="#galeria" class="hover:text-[#FF6B00] transition-colors">Galería</a>
+          <a href="#contacto" class="hover:text-[#FF6B00] transition-colors">Contacto</a>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row justify-between items-center text-[11px] text-gray-400 gap-4 text-center">
+        <p>© 2026 GRUPO MENÉNDEZ. Todos los derechos reservados.</p>
+        <p class="text-gray-400 font-medium">Boca del Río, Veracruz, México.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Script principal -->
+  <script src="js/main.js"></script>
+</body>
+</html>
