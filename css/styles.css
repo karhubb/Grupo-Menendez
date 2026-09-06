@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --color-gm-orange: #FF6B00;
+  --color-gm-navy: #1E293B;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #1E293B;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+}
+
+/* Franja naranja inferior del Header */
+.brand-accent-bar {
+  height: 4px;
+  background: linear-gradient(90deg, #FF6B00 0%, #FFA15C 50%, #FF6B00 100%);
+  box-shadow: 0 2px 8px rgba(255, 107, 0, 0.35);
+}
+
+/* Enlaces del Header con indicador animado */
+.nav-link {
+  position: relative;
+  padding-bottom: 4px;
+  color: #475569;
+  font-weight: 600;
+  font-size: 13px;
+  transition: color 0.25s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #FF6B00;
+  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border-radius: 2px;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #FF6B00 !important;
+}
+
+/* Tarjetas con micro-elevación */
+.card-vibrant {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 1px solid #E2E8F0;
+}
+
+.card-vibrant:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 32px -8px rgba(30, 41, 59, 0.12);
+  border-color: rgba(255, 107, 0, 0.45);
+}
+
+.img-zoom-container {
+  overflow: hidden;
+}
+
+.img-zoom {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-vibrant:hover .img-zoom,
+.img-zoom-container:hover .img-zoom {
+  transform: scale(1.05);
+}
+
+/* Botón corporativo */
+.btn-vibrant {
+  background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
+  transition: all 0.3s ease;
+}
+
+.btn-vibrant:hover {
+  background: linear-gradient(135deg, #FF6B00 0%, #E05A00 100%);
+  box-shadow: 0 10px 25px -5px rgba(255, 107, 0, 0.45);
+  transform: translateY(-1.5px);
+}
